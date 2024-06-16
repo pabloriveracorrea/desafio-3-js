@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #key {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border: 5px solid black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .new-div {
+        width: 200px;
+        height: 200px;
+        border: 5px solid black;
+      }
+
+      .contenedor {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        gap: 10px; /* Espacio entre los botones */
+        margin-top: 20px; /* Espacio superior opcional */
+      }
+
+      .contenedor a {
+        display: inline-block;
+        padding: 10px 20px; /* Espaciado interno para simular un botón */
+        text-decoration: none; /* Elimina el subrayado del enlace */
+        color: white; /* Color del texto */
+        background-color: hsl(189, 100%, 50%); /* Color de fondo */
+
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 16px; /* Tamaño de la fuente */
+        text-align: center; /* Alineación del texto */
+        transition: background-color 0.3s ease; /* Transición suave */
+      }
+
+      .contenedor a:hover {
+        background-color: darkblue; /* Color de fondo al pasar el mouse */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <a href="./pintar.html">Pintar</a>
+      <a href="./4_colores.html">4 colores</a>
+    </div>
+
+    <div id="key"></div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
